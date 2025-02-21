@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(9, 241, 133);
+}
+.titulo{
+    background-color: rgb(9, 241, 133);
+    color: black;
+    flex: 6;
+}
+
+.parrafo{
+    background-color: rgb(9, 241, 133);
+    color: black;
+    display: flex;
+    font-size: larger;
+    text-align: center;
+    padding: 1cm;
+    text-wrap: wrap;
+    width: 50%;
+
+
+}
+.container2{
+    display: flex;
+    
+}
+.ejemplo{
+    background: linear-gradient(180deg,rgb(9, 241, 133),rgb(8, 148, 15));
+    color: black  ;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+}
+.container3{
+    background: linear-gradient(rgb(8, 148, 15));
+    display: flex;
+    flex-direction: column;
+}
+.ejemplo2{
+   background-color: rgb(8, 148, 15);
+    color: black  ;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    font-size: 23px;
+}
+li{
+    text-wrap: wrap;
+    font-size: 20px;
+}
+p{
+    color: red;
+}

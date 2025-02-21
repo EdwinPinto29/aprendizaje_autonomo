@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia BEM</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <main>
+                <h1>Metodologia BEM</h1>
+            </main>
+        </div>
+        <div class="parrafo">
+            <section>
+                <h3 >
+                    <p>DESCRIPCION</p> <br> La Metodología BEM (Block, Element, Modifier) es un enfoque de nomenclatura de clases en CSS que ayuda a estructurar y organizar el código de manera más clara y mantenible. <br><br> <p>EJEMPLOS</p>
+                </h3>
+            </section>
+        </div>
+        <div class="container2">
+            <div class="ejemplo"> 
+                <section>
+                    
+                        <li>
+                            1. <p> (Block): </p><br>
+                            <p>Definición:</p> Un bloque es un componente independiente y autónomo que tiene un significado propio. Es una entidad visual o de interfaz de usuario que se puede reutilizar.
+                                <br><p>Convención de nomenclatura:</p>Utiliza un nombre descriptivo en minúsculas, sin espacios ni caracteres especiales. Para separar palabras, usa guiones (-). <p>Ejemplo</p> <br> div class="boton">...
+                        </li>
+                       
+                </section>
+            </div>
+            <div class="ejemplo">
+                <section>
+                    <li>
+                        2. <p>Elemento (Element): </p> <br>
+
+                        <p>Definición:</p> Un elemento es una parte de un bloque que no tiene significado propio y que no se puede reutilizar independientemente del bloque al que pertenece.
+                        <br><p>Convención de nomenclatura:</p> El nombre del elemento se construye añadiendo un doble guion bajo (__) al bloque, seguido por el nombre del elemento. <p>Ejemplo</p> <br> 
+                        <br>div class="boton"<br>
+                          span class="boton__icono">...span <br>
+                          span class="boton__texto">Hacer clic span <br>
+                        div 
+                    </li>
+                </section>
+            </div>
+        </div>
+
+    </div>    
+    <div class="container3">
+        <div class="ejemplo2">
+            <section>
+                Esta metodología facilita la identificación y el mantenimiento de estilos, especialmente en proyectos grandes, al proporcionar una estructura clara y jerárquica para las clases de CSS.
+            </section>
+        </div>
+    </div>
+</body>
+</html>
