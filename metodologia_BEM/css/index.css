@@ -7,17 +7,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(9, 241, 133);
-}
-.titulo{
-    background-color: rgb(9, 241, 133);
-    color: black;
-    flex: 6;
+    background-color:black;
 }
 
+
 .parrafo{
-    background-color: rgb(9, 241, 133);
-    color: black;
+    background-color:black;
+    color: rgb(230, 224, 224);
     display: flex;
     font-size: larger;
     text-align: center;
@@ -32,29 +28,84 @@
     
 }
 .ejemplo{
-    background: linear-gradient(180deg,rgb(9, 241, 133),rgb(8, 148, 15));
-    color: black  ;
-    width: 50vw;
-    height: 50vh;
-    text-align: center;
-}
-.container3{
     background: linear-gradient(rgb(8, 148, 15));
-    display: flex;
-    flex-direction: column;
+    color: rgb(245, 242, 242)  ;
+    width: 50vw;
+    height: 36vh;
+    text-align: center;
+   
 }
 .ejemplo2{
-   background-color: rgb(8, 148, 15);
-    color: black  ;
-    width: 100vw;
-    height: 10vh;
+    background-color:black;
+    color: rgb(241, 236, 236)  ;
+    width: 50vw;
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
+    
+}
+.imagenes{
+    width: 80vh;
+    height: 40vh;
+    padding:2cm;
+    padding-right: 1cm;
+}
+.imagenes_pequeñas{
+    width: 80vh;
+    height: 20vh;
+    padding-left: 3cm;
+    
+}
+main{
+    background-color:black;
+    color: rgb(230, 226, 226);
+    text-align: center;
 }
 li{
     text-wrap: wrap;
     font-size: 20px;
 }
 p{
+    color: red;
+    
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(7, 179, 84);
+}
+th, td {
+    padding: 15px;
+    border: 1px solid #0e0d0d;
+    text-align: center;
+    font-size: medium;
+}
+section{
+    text-align: center;
+    font-size: 24px;
+}
+img{
+    display: flex;
+    align-items: center;
+}
+a{
+    padding-left: 0.8cm;
+}
+.links{
+    margin-right: 30px  ;
+    color: rgb(2, 1, 1);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+.bio-link {
+    margin-right: 30px  ;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+}
+#opacidad{
+    opacity: 40%;
     color: red;
 }
