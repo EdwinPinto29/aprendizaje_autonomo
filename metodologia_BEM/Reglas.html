@@ -9,18 +9,143 @@
 <body>
     <div class="container">
         <header>
-            <h1 id="header">Metodologia BEM</h1>
+            <h1 id="header">REGLAS</h1>
         </header>
         <div class="ejemplo">
+            <br><br>
             <section>
                 <h3 >
-                    
-                    <p>DESCRIPCION</p> <br> La Metodología BEM (Block, Element, Modifier) es un enfoque de nomenclatura de clases en CSS que ayuda a estructurar y organizar el código de manera más clara y mantenible. <br><br>
-                    
-                    <br><br> <p>EJEMPLOS</p> <br>
+                    <p>DESCRIPCION</p> <br> En CSS tenemos las denominadas «at-rules» (reglas precedidas del carácter @). Son un tipo de declaración especial que permite indicar comportamientos especiales en muchos contextos. Su sintaxis suele determinarse incluyendo una palabra clave que comienza por @ (como por ejemplo @media o @import) y dependiendo de la regla en cuestión, puede tener una sintaxis u otra <br><br>
                 </h3>
             </section>
         </div>
     </div>
+    <div class="container">
+        <br>
+        <br>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Regla</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>@import</td>
+                        <td>Incluye una hoja de estilos externa, indicando su URL.</td>
+
+                    </tr>
+                    <tr>
+                        <td>@supports</td>
+                        <td>Establece un bloque de estilos que se aplicará si se cumple la condición.</td>
+
+                    </tr>
+                    <tr>
+                        <td>@media</td>
+                        <td>Aplica los estilos si cumple las condiciones indicadas. Usado para responsive. </td>
+
+                    </tr>
+                    <tr>
+                        <td>@keyframes</td>    
+                        <td>Crea los fotogramas clave de una animación.</td>
+
+                    </tr>
+                    <tr>
+                        <td>@scope</td>
+                        <td>Aplica estilos con un límite de ámbito en elementos descendientes.</td>
+
+                    </tr>
+                    <tr>
+                        <td>@font-face</td>
+                        <td>Indica una tipografía externa que el navegador debe descargar.</td>
+
+                    </tr>
+                    <tr>
+                        <td>@font-feature-values</td>
+                        <td>Activa/desactiva características especiales en una tipografía</td>
+
+                    </tr>
+                    <tr>
+                        <td>@page</td>
+                        <td>Modifica propiedades relacionadas con una página impresa.</td>
+
+                    </tr>
+                    <tr>
+                        <td>@counter-style</td>
+                        <td>Indica el estilo que se utilizará en los contadores CSS</td>
+
+                    </tr>
+                    <tr>
+                        <td>@property</td>
+                        <td>Indica el tipo de dato de una variable CSS, aplicando ciertas ventajas.</td>
+
+                    </tr>
+                    <tr>
+                        <td>@layer</td>
+                        <td>Establece que estilos se incluirán en una capa (que se fusionará más tarde).</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container2">
+            <div class="ejemplo"> 
+                <br><br>
+                <section>
+                            <p> La regla @import </p><br>
+                            <p>Definición:</p> <br>La regla @import es una regla de CSS que permite cargar un fichero .css externo, leer sus líneas de código e incorporarlo al archivo actual. Estas reglas CSS se suelen indicar en las primeras líneas del fichero, ya que deben figurar antes de otras reglas CSS o contenido CSS similar.
+                            La sintaxis de la regla @import es la siguiente: 
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Tipo de importacion</th>
+                            <th>Descripcion</th>
+                        </tr>
+                        <tr>
+                            <td>@import</td>
+                            <td>Importamos una hoja de estilos CSS externa.</td>
+    
+                        </tr>
+                        <tr>
+                            <td>@import  media query</td>
+                            <td>Importamos una hoja de estilos CSS sólo si condide con el media query indicado.</td>
+    
+                        </tr>
+                        <tr>
+                            <td>@import  supports(condición)</td>
+                            <td>Importamos una hoja de estilos CSS sólo si el navegador soporta la condición. </td>
+    
+                        </tr>
+                        <tr>
+                            <td>@import  layer(nombre)</td>    
+                            <td>Importamos una hoja de estilos CSS y la colocamos en la capa nombre.</td>
+    
+                        </tr>
+                        <tr>
+                            <td>@import  layer()</td>
+                            <td>Importamos una hoja de estilos CSS y la colocamos en una nueva capa anónima.</td>
+    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container">
+                <br>
+                <section class="ejemplo">
+                    Un detalle muy importante es que hay que tener en cuenta que la regla @import se evalua en el navegador a la hora de cargar la página, por lo que cada regla @import equivale a una petición al servidor de un nuevo archivo .css.
+                </section>
+                <nav>
+                    <a href="main.html" class="bio-link">VOLVER</a>
+                </nav>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+        
 </body>
 </html>
