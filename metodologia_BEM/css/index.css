@@ -72,7 +72,8 @@ p{
 table{
     width: 100%;
     border-collapse: collapse;
-    background-color: rgb(7, 179, 84);
+    background-color: rgb(5, 94, 45);
+    color: white;
 }
 th, td {
     padding: 15px;
