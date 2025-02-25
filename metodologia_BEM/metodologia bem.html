@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologia BEM</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="header">Metodologia BEM</h1>
+        </header>
+        <div class="ejemplo">
+            <section>
+                <h3 >
+                    
+                    <p>DESCRIPCION</p> <br> La Metodología BEM (Block, Element, Modifier) es un enfoque de nomenclatura de clases en CSS que ayuda a estructurar y organizar el código de manera más clara y mantenible. <br><br>
+                    
+                    <br><br> <p>EJEMPLOS</p> <br>
+                </h3>
+            </section>
+        </div>
+        <div class="container2">
+            <div class="ejemplo"> 
+                <section>
+                    
+                        <li>
+                            1. <p> (Block): </p><br>
+                            <p>Definición:</p> Un bloque es un componente independiente y autónomo que tiene un significado propio. Es una entidad visual o de interfaz de usuario que se puede reutilizar.
+                                <br><p>Convención de nomenclatura:</p>Utiliza un nombre descriptivo en minúsculas, sin espacios ni caracteres especiales. Para separar palabras, usa guiones (-). <p>Ejemplo</p> <br> div class="boton">...
+                        </li>
+                       
+                </section>
+            </div>
+            <div class="ejemplo">
+                <section>
+                    <li>
+                        2. <p>Elemento (Element): </p> <br>
+
+                        <p>Definición:</p> Un elemento es una parte de un bloque que no tiene significado propio y que no se puede reutilizar independientemente del bloque al que pertenece.
+                        <br><p>Convención de nomenclatura:</p> El nombre del elemento se construye añadiendo un doble guion bajo (__) al bloque, seguido por el nombre del elemento. <p>Ejemplo</p> <br> 
+                        <br>div class="boton"<br>
+                          span class="boton__icono">...span <br>
+                          span class="boton__texto">Hacer clic span <br>
+                        div 
+                    </li>
+                </section>
+            </div>
+        </div>
+
+    </div>    
+    <div class="container">
+        <div class="ejemplo2">
+            <section>
+                3. <p> (Modifier): </p> <br>
+
+                    <p>Definición:</p> Un modificador es una variación o estado de un bloque o elemento. Se utiliza para cambiar la apariencia o comportamiento del bloque o elemento sin modificar su estructura principal.
+                    <br><p>Convención de nomenclatura:</p> El nombre del modificador se construye añadiendo un doble guion (-) al bloque o elemento, seguido por el nombre del modificador. <p>Ejemplo</p> <br>
+                    div class="boton boton--primario">... div
+            </section>
+            <br><br>
+            <section>
+                <strong id="opacidad">Esta metodología facilita la identificación y el mantenimiento de estilos, especialmente en proyectos grandes, al proporcionar una estructura clara y jerárquica para las clases de CSS. </strong><br> <br>
+                <br>
+                <nav>
+                    <a href="main.html">VOLVER</a>
+                </nav>
+                <br><br><br>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

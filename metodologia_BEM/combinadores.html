@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="Combinadores">Combinadores</h1>
+        </header>
+    </div>
+    <div class="container">
+        <div class="ejemplo">
+            <section>
+                <h3>
+                    <p >DESCRIPCION</p><br> Un combinador CSS es un símbolo que permite unir dos o más selectores CSS para crear uno más complejo y potente. CSS ofrece varios tipos de combinadores, que se detallan en la siguiente tabla: <br>
+                    <nav>
+                        <a href="#Combiancion descendiente" class="bio-link">Descendiente  </a>
+                        <a href="#Combinador hijo" class="bio-link">Hijo  </a>
+                        <a href="#Combinador hermano adyacente" class="bio-link">Hermano adyacente  </a>
+                        <a href="#Combinador hermano general" class="bio-link">Hermano general  </a>
+                        <a href="#Combinador universal" class="bio-link">Universal  </a>
+                        <a href="#header" class="bio-link">Volver</a>
+                    </nav>
+             </h3>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <table>
+               
+                <tbody>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Simbolo</th>
+                        <th>Ejemplo</th>
+                        <th>Significado</th>
+                    </tr>
+                    <tr>
+                        <td>Combinacion descendiente</td>
+                        <td>(espacio)</td>
+                        <td>#page div { }</td>
+                        <td>Selecciona elementos dentro de otros (cualquier nivel).</td>
+                    </tr>
+                    <tr>
+                        <td>Combinador hijo</td>
+                        <td>></td>
+                        <td>#page > div { }</td>
+                        <td>Selecciona elementos hijos directos (primer nivel).</td>
+                    </tr>
+                    <tr>
+                        <td>Combinador hermano adyacente</td>
+                        <td>+</td>
+                        <td>div + div { }</td>
+                        <td>Selecciona elementos contiguos a otros (mismo nivel)</td>
+                    </tr>
+                    <tr>
+                        <td>Combinador hermano general</td>
+                        <td>~</td>
+                        <td>div ~ div { }</td>
+                        <td>Selecciona elementos que siguen a otros (mismo nivel).</td>
+                    </tr>
+                    <tr>
+                        <td>Combinador universal</td>
+                        <td>*</td>
+                        <td>#page * { }</td>
+                        <td>Selecciona todos los elementos (cualquier nivel).</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="container">
+                <section class="ejemplo2">
+                    <p id="Combinacion descendiente">
+                        Combinacion descendiente <br>
+                    </p>
+                    <br>
+                    En CSS, se utiliza el término selector descendiente para referirse a una forma de seleccionar elementos específicos que están contenidos dentro de otros elementos. Aunque esta técnica puede parecer simple, es crucial ejercer precaución, ya que puede convertirse en una fuente de problemas si no se comprende adecuadamente.
+                    <img class="imagenes" src="imagenes/Combinador descendiente.png" alt="">
+                    <br>
+                    <p>Repasemos varios detalles importantes respecto a este combinador CSS:</p>
+                    <br>
+                    <li>Se están seleccionando todos los elementos div que están dentro del elemento con id="page".</li>
+                    <li>Observa que se seleccionan independientemente del nivel al que estén (hijos, nietos, ...)</li>
+                    <li>En este caso, el div de div#page es innecesario, ya que habíamos dicho que los id no se pueden repetir. Si ya existe un elemento con id page, no hace falta diferenciarlo también por etiqueta. Si se tratase de una clase, sí podría usarse.</li><br>
+                    Es posible crear selectores altamente complejos con tantos elementos como se desee, pero una recomendación es siempre procurar mantenerlos lo más simples posible. Cuantos más elementos descendientes se incluyan en un selector, mayor será la complejidad en el procesamiento de esa regla por parte de los navegadores, y mayor será la especificidad del selector, lo que podría introducir ciertas complicaciones.
+                </section>
+                <section class="ejemplo2">
+                    <br>
+                    <p id="Combinador hijo">
+                        Combinador hijo <br>
+                    </p>
+                    <br>
+                    También es factible hacer referencia a elementos hermanos, que son aquellos elementos que están directamente adyacentes al elemento especificado. Utilizando el símbolo + en el selector de hermano adyacente, es posible seleccionar elementos hermanos que están uno junto al otro en el mismo nivel:
+                    <img class="imagenes" src="imagenes/Combinador hermano contiguo.png" alt="">
+                    <br>
+                    Al contrario que en el caso anterior, no se seleccionan todos los elementos div descendientes, sino solo aquellos que son hijos directos del primer elemento especificado.
+                </section>
+                <section class="ejemplo2">
+                    <br>
+                    <p id="Combinador hermano adyacente">
+                        Combinador hermano adyacente <br>
+                    </p>
+                    <br>
+                    Aunque el selector descendiente es bastante interesante, nos puede interesar hacer la misma operación, pero en lugar de seleccionar todos los elementos descendientes, seleccionar solo los descendientes directos del elemento con el símbolo >, descartando así nietos y sucesivos.
+                    <img class="imagenes" src="imagenes/combinador hijo.png" alt="">
+                    <br>
+                    Obsérvese que el primer elemento span no es seleccionado, puesto que es el que estamos tomando de referencia de base. Una buena forma para entenderlo es leerlo de la siguiente forma: «todo elemento span que esté inmediatamente precedido de un span».
+                </section>
+                <section class="ejemplo2">
+                    <br>
+                    <p id=" Combinador hermano general">
+                        Combinador hermano general <br>
+                    </p>
+                    <br>
+                    Si consideramos otras posibilidades en el ejemplo anterior, es posible que necesitemos ser menos específicos. En lugar de seleccionar solo los elementos hermanos que son adyacentes, podríamos querer seleccionar todos los hermanos en general, sin requerir que sean adyacentes. Esto se logra utilizando el "selector hermano general, que se representa con el símbolo ~:
+                    <img class="imagenes" src="imagenes/Combinador hermano general.png" alt="">
+                    <br>                    
+                    Como se ve en el ejemplo, no es necesario que el elemento strong se encuentre adyacente al primero, sino que basta con que esté a continuación y sean hermanos en el mismo nivel.
+                </section>
+                <section class="ejemplo2">
+                    <br>
+                    <p id="Combinador universal">
+                        Combinador universal <br>
+                    </p>
+                    <br>
+                    Por último, el selector universal se simboliza con un asterisco * y es la forma de aplicar ciertos estilos en TODOS Y CADA UNO de los elementos HTML correspondientes.
+                    <img class="imagenes" src="imagenes/Combinador universal.png" alt="">
+                    <br>
+                    Este ejemplo selecciona todos los elementos dentro de div#menu. Es importante recalcar la diferencia de seleccionar #menu, a seleccionar todos los elementos dentro de #menu, que es lo que estamos haciendo en este caso.
+                    <br>
+                    <br>
+                    <nav>
+                        <a href="main.html">VOLVER</a>
+                    </nav>
+                </section>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</body>
+</html>
